@@ -12,5 +12,6 @@ public interface IProductoService {
 	public List<Producto> filtrarCategoria(String categoria);
 	public List<Producto> filtrarNombre(String nombre);
 	public List<Producto> filtrarPrecio(float priceMin, float priceMax);
+	public Producto getByCodigo(int codigo);
 	
 }

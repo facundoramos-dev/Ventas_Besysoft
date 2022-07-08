@@ -50,5 +50,13 @@ public class VendedorService implements IVendedorService {
 	public void borrar(Vendedor vendedor) {
 		db.removeVendedor(vendedor);
 	}
+
+	@Override
+	public Vendedor getByCodigo(int codigo) {
+		for(Vendedor vendedor : getAll())
+			if(vendedor.getCodigo() == codigo)
+				return vendedor;
+		return null;
+	}
 	
 }

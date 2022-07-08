@@ -1,5 +1,6 @@
 package besysoft.com.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 /**
  * Esta clase contiene la deficion de una entidad Venta (id, vendedor, productos)
@@ -57,7 +58,8 @@ public class Venta {
 	
 	//Constructor por defecto
 	public Venta() {
-		// TODO Auto-generated constructor stub
+		id = idIncrementable++;
+		productos = new ArrayList<Producto>();
 	}
 
 	/**
