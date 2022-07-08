@@ -87,9 +87,9 @@ public class Vendedor {
 	public String toString() {
 		return codigo+" - "+nombre
 				+"\nInformacion Financiera:"
-				+ "\nsueldo Base: " + sueldo
-				+ "\ncomisiones: " + comision
-				+ "\nTotal a cobrar: "+ (sueldo+comision);
+				+ "\nsueldo Base: $" + sueldo
+				+ "\ncomisiones: $" + comision
+				+ "\nTotal a cobrar: $"+ (sueldo+comision);
 	}
 	
 }

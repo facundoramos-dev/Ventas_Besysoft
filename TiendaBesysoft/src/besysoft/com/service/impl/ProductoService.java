@@ -99,5 +99,13 @@ public class ProductoService implements IProductoService {
 			return new ArrayList<Producto>();
 		}
 	}
+
+	@Override
+	public Producto getByCodigo(int codigo) {
+		for(Producto producto : getAll())
+			if(producto.getCodigo() == codigo)
+				return producto;
+		return null;
+	}
 	
 }
